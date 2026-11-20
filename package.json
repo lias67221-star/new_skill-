@@ -1,0 +1,14 @@
+{
+  "name": "skill-library-3d",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild room.js --bundle --minify --legal-comments=eof --outfile=dist/room.bundle.js",
+    "export-model": "node export-room.mjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "1.1.1",
+    "esbuild": "0.28.2",
+    "three": "0.187.0"
+  }
+}
